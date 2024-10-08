@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    font-style: none;
+    color: black;
+}
+
+.container{
+    width: 120rem;
+    margin: 0 auto;
+    color: black;
+    font-family: sans-serif;
+}
+
+/*     Nav Section   */
+
+.nav_first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    cursor: pointer;
+}
+
+.nav_select{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_select select{
+    border: none;
+}
+
+.nav_profile_sec{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav_profile_sec div{
+    display: flex;
+    gap: 1rem;
+}
+.nav_profile_sec div p{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.nav_profile_sec div img{
+   width: 3rem;
+   height: 3rem;
+}
+
+/* #cart{
+    width: 7rem;
+    height: auto;
+    text-align: center;
+}
+
+#cart_p{
+    height: 2rem;
+    text-align: center;
+} */
+
+.nav_second{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_icon{
+    width: 15%;
+}
+.nav_icon {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav_icon  a{
+    font-size: 1.8rem;
+}
+
+.home_nav{
+    width: 50%;
+}
+.home_nav_ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.home_nav_ul li{
+    list-style: none;
+    font-size: 1.8rem;
+}
+.home_nav_ul li:nth-child(1){
+    color: #40BFFF;
+}
+
+/*   Hero  Section  */
+
+.hero_section{
+    background-image: url(img/Promotion\ Image.png);
+    height: 45rem;
+    background-size: cover;
+}
+
+.hero_section h1{
+    display: flex;
+    width: 42%;
+    font-size: 6rem;
+    color: whitesmoke;
+    margin-left: 6rem;
+    padding-top: 25rem;
+}
+
+
+/*   frist product section  */
+
+.product_a_sec{
+    width: 90rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+}
+
+.product_a_sec_content{
+    width: 30rem;
+    height: 20rem;
+}
+
+.product_a_one{
+    background-image: url(img/productA/image\ Product\ \(1\).png);
+    background-size: cover;
+}
+.product_a_two{
+    background-image: url(img/productA/image\ Product\ \(3\).png);
+    background-size: cover;
+}
+.product_a_three{
+    background-image: url(img/productA/image\ Product\.png);
+    background-size: cover;
+}
+
+.product_a_sec_content div{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem ;
+}
+
+.product_a_sec_content div h3{
+    width: 15rem;
+    font-size: 1.6rem;
+}
+
+.product_a_sec_content div p{
+    font-size: 1.6rem;
+    color: #40BFFF;
+    font-weight: bold;
+}
+
+.product_a_sec_content h4 {
+    color: red;
+    text-align: center;
+    margin-top: 15rem;
+    font-size: 1.6rem;
+}
+
+.product_a_sec_content h4 span{
+    color: black;
+   margin-right: 2rem;
+    text-decoration: line-through;
+}
+
+/*   Second product section  */
+
+.product_b_sec{
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+.product_title h2{
+    width: 20%;
+    margin: 0 auto;
+    font-size: 3rem;
+}
+
+.product_title_a{
+    margin: 3rem auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_title_a a{
+    font-size: 1.8rem;
+}
+.product_title_a a:nth-child(1){
+    color: #40BFFF;
+   border-bottom: #40BFFF 2px solid;
+}
+
+.product_content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}
+
+.product_content_img{
+    max-width: 25rem;
+    height: 20rem;
+}
+
+.product_detels{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    margin-right: 5rem;
+    padding-top: 2rem;
+}
+
+.product_detels h4{
+    font-size: 1.6rem;
+}
+
+.product_detels p{
+    font-size: 1.4rem;
+    color: #40BFFF;
+    font-weight: bold;
+}
+.price{
+    color: black;
+    text-decoration: line-through;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: normal;
+}
+
+#discount{
+    color: red;
+}
+
+.load_more{
+    padding-top: 3rem;
+    font-size: 2rem;
+    color: #40BFFF;
+    text-align: center;
+    border-bottom: #40BFFF 2px solid;
+    cursor: pointer;
+}
+
+/*   Banner Section   */
+
+.banner{
+    height: 40rem;
+    background: #40BFFF;
+    display: flex;
+}
+
+.banner_content{
+    padding-left: 8rem;
+}
+
+.banner_content h2{
+    font-size: 3.6rem;
+    color: whitesmoke;
+    padding-top: 15rem;
+}
+.banner_content p{
+    font-size: 2rem;
+    color: whitesmoke;
+    padding-top: 2rem;
+}
+.banner_content button{
+    font-size: 2rem;
+    color: whitesmoke;
+    background: #40BFFF;
+    padding-top: 2rem;
+    border: none;
+    border-bottom: whitesmoke 2px solid;
+    cursor: pointer;
+}
+
+.banner_img img{
+    height: 45rem;
+}
+
+/*   three colume frist  */
+
+.three_col-frist{
+    margin-top: 5rem;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 5rem;
+}
+
+.three_col-frist div{
+    max-width: 20%;
+}
+
+.three_col-frist div h4{
+    padding: 1.4rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+.three_col-frist p{
+    text-align: center;
+   font-size: 1.4rem;
+}
+.three_col-frist img{
+    display: flex;
+   margin: 0 auto;
+}
+
+
+/*   three colume second  */
+.three_col-second{
+    margin-top: 10rem;
+}
+.three_col-second h2{
+    width: 20%;
+    display: flex;
+    margin: 5rem auto;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.three_col-second_sec{
+    display: flex;
+    justify-content: space-around;
+}
+
+.three_col-second_content{
+    display: flex;
+    max-width: 35rem;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.three_col-second_content img{
+    width: 10rem;
+}
+.three_col-second_content p{
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.three_col-second_content h4{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+.three_col-second_content h5{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/*   three colume Third section  */
+
+.three_col_third h2{
+    width: 30%;
+    font-size: 3rem;
+    display: flex;
+    margin: 5rem auto;
+}
+
+.three_col_third_sec{
+    display: flex;
+    justify-content: space-around;
+}
+
+.three_col_third_content{
+    display: flex;
+    max-width: 35rem;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.three_col_third_content h4{
+    font-size: 2rem;
+}
+.three_col_third_content img{
+    padding: 1.6rem 0;
+}
+.three_col_third_content p{
+    font-size: 1.6rem;
+    color: red;
+}
+.three_col_third_content p span{
+   padding-left: 2rem;
+   color: black;
+   text-decoration: line-through;
+}
+
+/*   Search  section  */
+
+.search_sec{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_sec input{
+   width: 30rem;
+   height: 4rem;
+}
+.search_sec button{
+   width: 8rem;
+   height: 4rem;
+   color: whitesmoke;
+   background: #40BFFF;
+   border: #40BFFF;
+   cursor: pointer;
+}
+
+/*   footer  section   */
+
+.footer_sec{
+    background: #BCDDFE;
+    cursor: pointer;
+}
+
+.first_footer_sec{
+    padding: 7rem 0;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.footer_icon_content{
+    width: 30%;
+}
+.footer_icon_content div{
+   display: flex;
+   gap: 2rem;
+   align-items: center;
+}
+
+.footer_icon_content h3{
+    font-size: 2.4rem;
+}
+.footer_icon_content p{
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+.footer_follow{
+    width: 20%;
+}
+.footer_follow h3{
+   font-size: 2.4rem;
+   padding-bottom: 5rem;
+}
+.footer_follow p{
+   font-size: 2rem;
+}
+.footer_follow div{
+    margin-top: 2rem;
+   display: flex;
+   gap: 4rem;
+}
+
+.footer_contact{
+    width: 20%;
+}
+.footer_contact h3{
+    font-size: 2.4rem;
+    padding-bottom: 5rem;
+}
+.footer_contact p{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.second_footer_sec{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5rem;
+}
+.second_footer_sec div{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.second_footer_sec h3{
+   font-size: 2.4rem;
+}
+.second_footer_sec p{
+   font-size: 2rem;
+}
+
+.line{
+    width: 110rem;
+    margin-left: 5rem;
+    height: 3px;
+    background: whitesmoke;
+}
+
+.third_footer_sec{
+    margin: 3rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third_footer_sec p{
+    font-size: 2rem;
+    padding-bottom: 4rem;
+}
+
+.payment{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
